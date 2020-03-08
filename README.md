@@ -26,7 +26,7 @@ DTShare是一个完全开源免费的数据开放项目。
 > pip install dtshare --upgrade
 
 
-# 使用示例1 ：获取实时tick行情（包含集合竞价）#
+# 使用示例1 ：获取实时tick行情（包含集合竞价）
 
 > import dtshare as dt
 > 
