@@ -184,6 +184,6 @@ DTShare是一个完全开源免费的数据开放项目。
 
 ![](http://dt-share.com/img/weixin.png)
 
-也欢迎加入QQ群交流: 
+也欢迎加入官方QQ群交流: **1072948998**
 
 ![](http://dt-share.com/img/dtshare_qq.png)
