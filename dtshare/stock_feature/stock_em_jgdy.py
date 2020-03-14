@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 Data:2019/10/27 18:02
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 东方财富网-数据中心-特色数据-机构调研
 东方财富网-数据中心-特色数据-机构调研-机构调研统计: http://data.eastmoney.com/jgdy/tj.html
 东方财富网-数据中心-特色数据-机构调研-机构调研详细: http://data.eastmoney.com/jgdy/xx.html

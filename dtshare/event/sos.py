@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2020/1/23 9:07
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 新增-事件接口
 新增-事件接口新型冠状病毒-网易
 新增-事件接口新型冠状病毒-丁香园

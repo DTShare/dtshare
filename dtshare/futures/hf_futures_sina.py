@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/10/30 21:34
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 新浪财经-外盘期货-实时数据获取
 """
 import time

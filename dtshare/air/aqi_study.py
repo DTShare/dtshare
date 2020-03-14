@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 Data:2019/10/7 15:55
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 获取空气质量在线监测分析平台的空气质量数据
 https://www.aqistudy.cn/
 此部分参考 https://github.com/PKUJohnson/OpenData/tree/master/opendatatools/aqi2

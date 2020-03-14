@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 Data:2019/10/21 15:22
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 
 """
 import pandas as pd

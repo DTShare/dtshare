@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/11/26 16:33
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 河北省空气质量预报信息发布系统
 http://110.249.223.67/publish/
 等级划分

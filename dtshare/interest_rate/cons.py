@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2020/1/10 19:51
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 东方财富网-经济数据-银行间拆借利率-配置文件
 
 上海银行同业拆借市场

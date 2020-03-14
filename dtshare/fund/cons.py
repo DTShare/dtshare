@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/9/30 13:58
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 基金配置文件
 """
 # 中国证券投资基金业协会-信息公示-会员信息

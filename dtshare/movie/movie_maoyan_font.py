@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 Data:2019/10/16 21:40
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 下载猫眼电影的字体文件到本地
 如果更新, 请重新人工标注 get_font_data 里面的数字
 """

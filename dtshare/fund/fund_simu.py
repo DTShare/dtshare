@@ -3,7 +3,7 @@
 # """
 # Author: Tong Du
 # date: 2020/2/29 21:13
-# Email: dtshare@126.com
+# contact: dtshare@126.com
 # desc:
 # """
 # import hashlib

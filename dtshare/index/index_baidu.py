@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 Data:2019/10/2 23:53
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 百度指数
 感谢 https://cloudcrawler.club/categories/2019%E5%B9%B4%E6%9C%AB%E9%80%86%E5%90%91%E5%A4%8D%E4%B9%A0/
 """

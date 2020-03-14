@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2020/1/22 19:56
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 英为财情-外汇-货币对历史数据
 https://cn.investing.com/currencies/
 https://cn.investing.com/currencies/eur-usd-historical-data

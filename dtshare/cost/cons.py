@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 Data:2019/10/18 12:50
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: cost配置文件
 """
 url = "https://www.expatistan.com/cost-of-living/index"

@@ -408,12 +408,15 @@ def _code_to_symbol(code):
     '''
         生成symbol代码标志
     '''
-    if len(code) != 6 :
-        return code
+    if code in INDEX_LABELS:
+        return INDEX_LIST[code]
     else:
-        return '1' if code[:1] in ['5', '6', '9'] or code[:2] in ['11', '13'] else '0'
+        if len(code) != 6 :
+            return code
+        else:
+            return 'sh%s'%code if code[:1] in ['5', '6', '9'] or code[:2] in ['11', '13'] else 'sz%s'%code
 
-        
+     
 def _code_to_symbol_dgt(code):
     '''
         生成symbol代码标志

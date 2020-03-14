@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/11/7 15:23
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 银保监会配置文件
 """
 cbirc_headers_without_cookie_2020 = {

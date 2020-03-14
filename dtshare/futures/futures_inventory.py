@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/9/30 13:58
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 99期货网大宗商品库存数据
 """
 import os

@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 Data:2019/10/2 22:24
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 获取微博指数
 """
 import re

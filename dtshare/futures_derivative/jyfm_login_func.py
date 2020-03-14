@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 Data:2019/10/9 14:23
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 交易法门-登录函数
 """
 from io import BytesIO

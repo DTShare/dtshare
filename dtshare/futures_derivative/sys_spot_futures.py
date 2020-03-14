@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/10/28 1:25
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 获取生意社-商品与期货-现期图: 图片和表格
 """
 from io import BytesIO

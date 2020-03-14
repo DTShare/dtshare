@@ -3,6 +3,6 @@
 """
 Author: Tong Du
 date: 2019/10/27 19:45
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 
 """

@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 Data:2019/10/27 18:02
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 东方财富网-数据中心-特色数据-股权质押
 东方财富网-数据中心-特色数据-股权质押-股权质押市场概况: http://data.eastmoney.com/gpzy/marketProfile.aspx
 东方财富网-数据中心-特色数据-股权质押-上市公司质押比例: http://data.eastmoney.com/gpzy/pledgeRatio.aspx

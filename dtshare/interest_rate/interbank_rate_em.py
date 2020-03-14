@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2020/1/10 17:13
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 东方财富网-经济数据-银行间拆借利率
 http://data.eastmoney.com/shibor/shibor.aspx?m=sg&t=88&d=99333&cu=sgd&type=009065&p=79
 """

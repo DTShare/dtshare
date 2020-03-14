@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/10/21 12:08
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 金十数据中心-经济指标-欧元区
 金十数据中心-经济指标-欧元区-国民经济运行状况-经济状况
 金十数据中心-经济指标-欧元区-国民经济运行状况-物价水平

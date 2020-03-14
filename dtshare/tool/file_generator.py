@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/11/14 14:38
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 
 """
 import requests

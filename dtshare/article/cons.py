@@ -3,7 +3,8 @@
 """
 Author: Tong Du
 date: 2019/11/14 20:32
-Email: dtshare@126.com
+contact: dtshare@126.com
+desc: 学术板块配置文件
 """
 # EPU
 epu_home_url = "http://www.policyuncertainty.com/index.html"

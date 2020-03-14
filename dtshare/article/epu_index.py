@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/11/30 13:14
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 获取 http://www.policyuncertainty.com/index.html 网站的经济政策不确定性指数
 """
 import pandas as pd

@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/9/30 13:58
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 获取商品期权数据
 说明：
 (1) 价格：自2019年12月02日起，纤维板报价单位由元/张改为元/立方米

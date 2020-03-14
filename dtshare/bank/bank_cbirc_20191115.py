@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/11/7 14:06
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 不需要控制速度, 但是需要伪装游览器, 不然会在第一次请求就被封 IP, 目前采用银保监会采用两套反扒方案
 1. 20191114在周内运行
 2. 20191115在周末运行

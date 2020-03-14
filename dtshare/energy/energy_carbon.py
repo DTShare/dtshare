@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 Data:2019/10/17 16:55
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 获取北京市碳排放权电子交易平台-北京市碳排放权公开交易行情
 https://www.bjets.com.cn/article/jyxx/
 """

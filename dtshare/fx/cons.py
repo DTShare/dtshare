@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/10/20 10:58
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 外汇配置文件
 """
 # headers

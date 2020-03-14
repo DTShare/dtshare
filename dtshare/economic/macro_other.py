@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/11/4 16:36
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 获取金十数据-其他-加密货币实时行情
 """
 import json

@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/9/30 13:58
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 请求网站内容的函数: 在链接失败后可重复 20 次
 """
 import time

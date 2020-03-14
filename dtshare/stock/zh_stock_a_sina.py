@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/10/30 11:28
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 新浪财经-A股-实时行情数据和历史行情数据(包含前复权和后复权因子)
 优化: 在A股行情的获取上采用多线程模式(新浪会封IP, 不再优化)
 """

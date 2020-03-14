@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 Data:2019/10/16 20:44
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 猫眼电影实时票房
 感谢老铁: https://cloudcrawler.club/cong-mao-yan-zi-ti-fan-pa-fen-xi-tan-tan-zi-ti-fan-pa-de-qian-shi-jin-sheng.html
 """

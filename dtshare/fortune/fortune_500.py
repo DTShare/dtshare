@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 Data:2019/10/10 21:55
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 历年世界500强榜单数据
 http://www.fortunechina.com/fortune500/index.htm
 特殊情况说明：

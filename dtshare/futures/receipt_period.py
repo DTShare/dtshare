@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/10/25 12:10
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 获取交易法门-工具-仓单工具-仓单有效期
 """
 import requests

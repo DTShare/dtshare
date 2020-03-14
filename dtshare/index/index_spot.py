@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 Data:2019/10/19 12:19
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 商品现货价格指数
 http://finance.sina.com.cn/futuremarket/spotprice.shtml#titlePos_0
 """

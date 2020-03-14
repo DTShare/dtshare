@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2020/1/31 17:02
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 
 """
 _board_url = "https://maoyan.com/board/1"  # 1 represent domestic or 2 represent abroad

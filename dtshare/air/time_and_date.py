@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/11/25 19:58
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 日出和日落数据
 """
 import pandas as pd

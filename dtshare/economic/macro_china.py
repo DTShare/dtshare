@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/10/21 12:08
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 金十数据-数据中心-中国-中国宏观
 首页-价格指数-中价-价格指数-中国电煤价格指数(CTCI)
 http://jgjc.ndrc.gov.cn/dmzs.aspx?clmId=741

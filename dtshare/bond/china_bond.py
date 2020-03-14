@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 Data:2019/10/11 19:54
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc:
 获取中国外汇交易中心暨全国银行间同业拆借中心-市场数据-债券市场行情-现券市场做市报价
 获取中国外汇交易中心暨全国银行间同业拆借中心-市场数据-债券市场行情-现券市场成交行情
@@ -135,7 +135,9 @@ def bond_china_yield(start_date="2019-02-04", end_date="2020-02-04"):
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36",
     }
     res = requests.get(url, params=params, headers=headers)
-    return pd.read_html(res.text, header=0)[1]
+    data_text = res.text.replace("&nbsp", "")
+    data_df = pd.read_html(data_text, header=0)[1]
+    return data_df
 
 
 if __name__ == "__main__":

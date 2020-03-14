@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/11/16 20:39
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 腾讯-股票-实时行情-成交明细
 下载成交明细-每个交易日16:00提供当日数据
 该列表港股报价延时15分钟

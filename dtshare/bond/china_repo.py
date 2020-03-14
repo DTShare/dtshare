@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2020/2/9 11:48
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 腾讯-债券-质押式回购-实时行情-成交明细
 下载成交明细-每个交易日16:00提供当日数据
 http://stockhtm.finance.qq.com/sstock/ggcx/131802.shtml

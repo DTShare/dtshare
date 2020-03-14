@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/10/17 1:19
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 指数配置文件
 """
 # spot-goods

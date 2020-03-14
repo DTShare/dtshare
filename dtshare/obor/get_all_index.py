@@ -1,9 +1,9 @@
 # -*- coding:utf-8 -*-
 # /usr/bin/env python
 """
-Author: Albert King
+Author: Tong Du
 date: 2019/10/17 0:50
-contact: jindaxiang@163.com
+contact: dtshare@126.com
 desc: 获取具体指数数据, 科威特剔除
 """
 
@@ -11,7 +11,7 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 import re
-from akshare.obor.get_countries_from_invest_web import get_countries_url
+from dtshare.obor.get_countries_from_invest_web import get_countries_url
 
 web_site = get_countries_url()
 

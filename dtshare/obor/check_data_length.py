@@ -1,9 +1,9 @@
 # -*- coding:utf-8 -*-
 # /usr/bin/env python
 """
-Author: Albert King
+Author: Tong Du
 date: 2019/9/30 13:58
-contact: jindaxiang@163.com
+contact: dtshare@126.com
 desc: 常用变量
 """
 

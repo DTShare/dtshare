@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 Data:2019/10/4 15:49
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 获取谷歌指数, 必须使用代理, 获得的数据是小时频率的, 所以获取时间周期太长会很慢
 """
 from dtshare.index.request import TrendReq

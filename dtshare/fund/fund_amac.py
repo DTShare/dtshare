@@ -1,7 +1,7 @@
 """
 Author: Tong Du & Guo Yangyang
 date: 2020/01/16 19:54
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 获取中国证券投资基金业协会-信息公示数据
 中国证券投资基金业协会-新版: http://gs.amac.org.cn
 中国证券投资基金业协会-旧版: http://www1.amac.org.cn/

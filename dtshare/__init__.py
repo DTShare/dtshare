@@ -1,7 +1,6 @@
 # -*- coding:utf-8 -*-
-# /usr/bin/env python
 
-__version__ = "1.0.1"
+__version__ = "1.0.3"
 __author__ = "Tony Du"
 
 
@@ -16,17 +15,15 @@ from dtshare.stock.trading import (
     get_index,
 )
 
-
 """
-期货日线情数据
+currency interface
 """
-from dtshare.futures.daily_bar import (
-    get_cffex_daily,
-    get_czce_daily,
-    get_shfe_v_wap,
-    get_shfe_daily,
-    get_dce_daily,
-    get_futures_daily,
+from dtshare.currency.currency import (
+    currency_convert,
+    currency_currencies,
+    currency_history,
+    currency_latest,
+    currency_time_series,
 )
 
 
@@ -75,16 +72,15 @@ from dtshare.event.franchise import franchise_china
 from dtshare.bond.zh_bond_sina import bond_zh_hs_daily, bond_zh_hs_spot
 from dtshare.bond.zh_bond_cov_sina import bond_zh_hs_cov_daily, bond_zh_hs_cov_spot
 
+"""
+for pro api
+"""
+from dtshare.pro.data_pro import pro_api
 
-
-from dtshare.currency.currency import (
-    currency_convert,
-    currency_currencies,
-    currency_history,
-    currency_latest,
-    currency_time_series,
-)
-
+"""
+for pro api token set
+"""
+from dtshare.utils.token_process import set_token
 
 """
 债券质押式回购成交明细数据
@@ -204,6 +200,7 @@ from dtshare.futures_derivative.jyfm_tools_func import (
     jyfm_tools_futures_customize,
     jyfm_exchange_symbol_dict,
     jyfm_tools_futures_full_carry,
+    jyfm_tools_futures_arbitrage_matrix,
 )
 
 """
@@ -739,6 +736,7 @@ from dtshare.fund.fund_zdzk import zdzk_fund_index
 """
 from dtshare.bond.bond_bank import get_bond_bank
 
+
 """
 大宗商品现货价格及基差
 """
@@ -767,8 +765,24 @@ from dtshare.futures.receipt import get_receipt
 from dtshare.futures.roll_yield import get_roll_yield_bar, get_roll_yield
 
 """
+交易所日线行情数据
+"""
+from dtshare.futures.daily_bar import (
+    get_cffex_daily,
+    get_czce_daily,
+    get_shfe_v_wap,
+    get_shfe_daily,
+    get_dce_daily,
+    get_futures_daily,
+)
+
+"""
 配置文件
 """
 from dtshare.futures import cons
 from dtshare.fund import cons
 
+"""
+发邮件模块
+"""
+from dtshare.tool.send_email import send_email

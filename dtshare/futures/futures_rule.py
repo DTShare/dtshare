@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 Data:2019/10/30 21:51
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 国泰君安期货-交易日历数据表
 http://www.gtjaqh.com/jyrl.html
 """

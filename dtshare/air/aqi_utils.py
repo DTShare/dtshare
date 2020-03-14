@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 Data:2019/10/7 15:56
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: AQI 解密函数文件
 此部分参考 https://github.com/PKUJohnson/OpenData/tree/master/opendatatools/aqi2
 感谢 PKUJohnson 提供的加解密函数

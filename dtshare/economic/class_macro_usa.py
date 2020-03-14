@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/10/23 19:19
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 获取金十数据-数据中心所有连接
 """
 from bs4 import BeautifulSoup

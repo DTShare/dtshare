@@ -177,141 +177,6 @@ def get_tick_data(code=None, retry_count=3, pause=0.001):
             return df
     raise IOError(ct.NETWORK_URL_ERROR_MSG)
 
-
-def get_sina_dd(code=None, date=None, vol=400, retry_count=3, pause=0.001):
-    """
-        获取sina大单数据
-    Parameters
-    ------
-        code:string
-                  股票代码 e.g. 600848
-        date:string
-                  日期 format：YYYY-MM-DD
-        retry_count : int, 默认 3
-                  如遇网络等问题重复执行的次数
-        pause : int, 默认 0
-                 重复请求数据过程中暂停的秒数，防止请求间隔时间太短出现的问题
-     return
-     -------
-        DataFrame 当日所有股票交易数据(DataFrame)
-              属性:股票代码    股票名称    交易时间    价格    成交量    前一笔价格    类型（买、卖、中性盘）
-    """
-    if code is None or len(code)!=6 or date is None:
-        return None
-    symbol = ct._code_to_symbol(code)
-    vol = vol*100
-    for _ in range(retry_count):
-        time.sleep(pause)
-        try:
-            re = Request(ct.SINA_DD % (ct.P_TYPE['http'], ct.DOMAINS['vsf'], ct.PAGES['sinadd'],
-                                symbol, vol, date))
-            lines = urlopen(re, timeout=10).read()
-            lines = lines.decode('GBK') 
-            if len(lines) < 100:
-                return None
-            df = pd.read_csv(StringIO(lines), names=ct.SINA_DD_COLS,
-                               skiprows=[0])    
-            if df is not None:
-                df['code'] = df['code'].map(lambda x: x[2:])
-        except Exception as e:
-            print(e)
-        else:
-            return df
-    raise IOError(ct.NETWORK_URL_ERROR_MSG)
-
-
-def get_today_ticks(code=None, retry_count=3, pause=0.001):
-    """
-        获取当日分笔明细数据
-    Parameters
-    ------
-        code:string
-                  股票代码 e.g. 600848
-        retry_count : int, 默认 3
-                  如遇网络等问题重复执行的次数
-        pause : int, 默认 0
-                 重复请求数据过程中暂停的秒数，防止请求间隔时间太短出现的问题
-     return
-     -------
-        DataFrame 当日所有股票交易数据(DataFrame)
-              属性:成交时间、成交价格、价格变动，成交手、成交金额(元)，买卖类型
-    """
-    if code is None or len(code)!=6 :
-        return None
-    symbol = ct._code_to_symbol(code)
-    date = du.today()
-    for _ in range(retry_count):
-        time.sleep(pause)
-        try:
-            request = Request(ct.TODAY_TICKS_PAGE_URL % (ct.P_TYPE['http'], ct.DOMAINS['vsf'],
-                                                       ct.PAGES['jv'], date,
-                                                       symbol))
-            data_str = urlopen(request, timeout=10).read()
-            data_str = data_str.decode('GBK')
-            data_str = data_str[1:-1]
-            data_str = eval(data_str, type('Dummy', (dict,), 
-                                           dict(__getitem__ = lambda s, n:n))())
-            data_str = json.dumps(data_str)
-            data_str = json.loads(data_str)
-            pages = len(data_str['detailPages'])
-            data = pd.DataFrame()
-            ct._write_head()
-            for pNo in range(1, pages+1):
-                data = data.append(_today_ticks(symbol, date, pNo,
-                                                retry_count, pause), ignore_index=True)
-        except Exception as er:
-            print(str(er))
-        else:
-            return data
-    raise IOError(ct.NETWORK_URL_ERROR_MSG)
-
-
-def _today_ticks(symbol, tdate, pageNo, retry_count, pause):
-    ct._write_console()
-    for _ in range(retry_count):
-        time.sleep(pause)
-        try:
-            html = lxml.html.parse(ct.TODAY_TICKS_URL % (ct.P_TYPE['http'],
-                                                         ct.DOMAINS['vsf'], ct.PAGES['t_ticks'],
-                                                         symbol, tdate, pageNo
-                                ))  
-            res = html.xpath('//table[@id=\"datatbl\"]/tbody/tr')
-            if ct.PY3:
-                sarr = [etree.tostring(node).decode('utf-8') for node in res]
-            else:
-                sarr = [etree.tostring(node) for node in res]
-            sarr = ''.join(sarr)
-            sarr = '<table>%s</table>'%sarr
-            sarr = sarr.replace('--', '0')
-            df = pd.read_html(StringIO(sarr), parse_dates=False)[0]
-            df.columns = ct.TODAY_TICK_COLUMNS
-            df['pchange'] = df['pchange'].map(lambda x : x.replace('%', ''))
-        except Exception as e:
-            print(e)
-        else:
-            return df
-    raise IOError(ct.NETWORK_URL_ERROR_MSG)
-        
-    
-def get_today_all():
-    """
-        一次性获取最近一个日交易日所有股票的交易数据
-    return
-    -------
-      DataFrame
-           属性：代码，名称，涨跌幅，现价，开盘价，最高价，最低价，最日收盘价，成交量，换手率，成交额，市盈率，市净率，总市值，流通市值
-    """
-    ct._write_head()
-    df = _parsing_dayprice_json('hs_a', 1)
-    if df is not None:
-        for i in range(2, ct.PAGE_NUM[1]):
-            newdf = _parsing_dayprice_json('hs_a', i)
-            df = df.append(newdf, ignore_index=True)
-    df = df.append(_parsing_dayprice_json('shfxjs', 1),
-                                               ignore_index=True)
-    return df
-
-
 def get_realtime_quotes(symbols=None):
     """
         获取实时交易数据 getting real time quotes data
@@ -465,14 +330,6 @@ def get_h_data(code, start=None, end=None, autype='qfq',
                 return pd.DataFrame()
             if ((float(rt['high']) == 0) & (float(rt['low']) == 0)):
                 preClose = float(rt['pre_close'])
-            else:
-                if du.is_holiday(du.today()):
-                    preClose = float(rt['price'])
-                else:
-                    if (du.get_hour() > 9) & (du.get_hour() < 18):
-                        preClose = float(rt['pre_close'])
-                    else:
-                        preClose = float(rt['price'])
             
             rate = float(frow['factor']) / preClose
             data = data[(data.date >= start) & (data.date <= end)]
@@ -753,39 +610,7 @@ def get_hists(symbols, start=None, end=None,
     else:
         return None
   
-  
-def get_day_all(date=None):
-    """
-    获取每日收盘行情
-    Parameters:
-    -------------
-    date:交易日期，格式:YYYY-MM-DD
-    
-    Return:
-    -------------
-    DataFrame
-    code 代码, name 名称, p_change 涨幅%,
-    price 现价, change 涨跌, open 今开, high 最高,
-    low 最低, preprice 昨收, pe 市盈(动),
-    volratio 量比, turnover 换手%, range 振幅%%,
-    volume 总量, selling 内盘, buying 外盘,
-    amount 总金额, totals 总股本(万), industry 细分行业,
-    area 地区, floats 流通股本(万), fvalues 流通市值,
-    abvalues AB股总市值, avgprice 均价, strength 强弱度%,
-    activity 活跃度, avgturnover 笔换手, attack 攻击波%,
-    interval3 近3月涨幅 ，interval 近6月涨幅
-    """
-    wdate = du.last_tddate() if date is None else date
-    wdate = wdate.replace('-', '')
-    if wdate < '20170614':
-        return None
-    datepre = '' if date is None else wdate[0:4] + wdate[4:6] + '/'
-    df = pd.read_csv(ct.ALL_DAY_FILE%(datepre, \
-                                      'hq' if date is None else wdate), \
-                                      dtype={'code':'object'})
-    return df
-
-
+ 
 def get_dt_time(t):
     tstr = str(t)[:-2]
     tstr = tstr.replace('-', '').replace(':', '')
@@ -827,33 +652,6 @@ def get_instrument(xapi=None):
     data = xapi.to_df(data)
     return data
 
-
-def get_markets(xapi=None):
-    """
-            获取市场代码
-    """
-    if xapi is None:
-        print(ct.MSG_NOT_CONNECTED)
-        return None
-    data = xapi.get_markets()
-    data = xapi.to_df(data)
-    return data
-    
-    
-def factor_adj(code):
-    df = pd.read_csv(ct.ADJ_FAC_URL%(ct.P_TYPE['http'],
-                                             ct.DOMAINS['oss'], code))
-    df = df.set_index('datetime')
-    return df
-
-
-def factor_shares(code):
-    df = pd.read_csv(ct.SHS_FAC_URL%(ct.P_TYPE['http'],
-                                             ct.DOMAINS['oss'], code))[['datetime', 'floats']]
-    df = df.set_index('datetime')
-    return df
-
-
 def _random(n=13):
     from random import randint
     start = 10**(n-1)
@@ -863,6 +661,7 @@ def _random(n=13):
 
 if __name__ == '__main__':
 #     get_tick_data('600848')
-    print(get_index())
+#     print(get_index())
+    print(get_k_data('600000'))
     
     

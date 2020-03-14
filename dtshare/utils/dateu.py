@@ -3,7 +3,6 @@
 import datetime
 import time
 import pandas as pd
-import cons as ct
 
 def year_qua(date):
     mon = date[5:7]
@@ -74,29 +73,6 @@ def get_quarts(start, end):
                           freq='Q-JAN')
     return [str(d).split('Q') for d in idx][::-1]
 
-
-def trade_cal():
-    '''
-            交易日历
-    isOpen=1是交易日，isOpen=0为休市
-    '''
-    df = pd.read_csv(ct.ALL_CAL_FILE)
-    return df
-
-
-def is_holiday(date):
-    '''
-            判断是否为交易日，返回True or False
-    '''
-    df = trade_cal()
-    holiday = df[df.isOpen == 0]['calendarDate'].values
-    if isinstance(date, str):
-        today = datetime.datetime.strptime(date, '%Y-%m-%d')
-
-    if today.isoweekday() in [6, 7] or str(date) in holiday:
-        return True
-    else:
-        return False
 
 
 def last_tddate():

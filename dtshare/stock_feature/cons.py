@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 Data:2019/10/30 21:02
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 
 """
 stock_em_sy_js = """

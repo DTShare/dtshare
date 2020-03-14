@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/10/25 15:56
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 和讯财经-上市公司社会责任报告数据, http://stockdata.stock.hexun.com/zrbg/
 """
 import demjson

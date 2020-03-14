@@ -1,9 +1,9 @@
 # -*- coding:utf-8 -*-
 # /usr/bin/env python
 """
-Author: Tony Du
+Author: Tong Du
 date: 2019/10/25 15:56
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 股票配置文件
 """
 # zh-sina-kcb

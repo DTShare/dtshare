@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 Data:2019/10/6 0:17
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 交易法门-数据
 
 交易法门-数据-黑色系

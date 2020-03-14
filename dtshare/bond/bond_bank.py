@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/9/30 13:58
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc:
 获取中国银行间市场交易商协会(http://www.nafmii.org.cn/)中孔雀开屏(http://zhuce.nafmii.org.cn/fans/publicQuery/manager)
 的债券基本信息数据

@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2020/2/25 17:00
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 金十数据中心-实时监控-微博舆情报告
 https://datacenter.jin10.com/market
 报告内容：时间期限可选择2小时、6小时、12小时、1天、1周、1月。

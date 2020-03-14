@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2020/02/14 11:28
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 新浪财经-债券-沪深债券-实时行情数据和历史行情数据
 """
 import datetime

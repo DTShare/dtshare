@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 Data:2019/10/25 13:55
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 获取 IT桔子 的死亡公司数据
 https://www.itjuzi.com/deathCompany
 死亡公司数据库网页声明：

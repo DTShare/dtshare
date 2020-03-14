@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/11/25 20:45
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 空气质量接口配置文件
 """
 city_chinese_list = [

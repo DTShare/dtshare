@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 Data:2019/10/27 18:02
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 东方财富网-数据中心-特色数据-商誉
 东方财富网-数据中心-特色数据-商誉-A股商誉市场概况: http://data.eastmoney.com/sy/scgk.html
 东方财富网-数据中心-特色数据-商誉-商誉减值预期明细: http://data.eastmoney.com/sy/yqlist.html

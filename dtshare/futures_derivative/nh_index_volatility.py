@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/11/26 18:52
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 获取南华期货-商品指数历史走势-收益率指数-波动率-http://www.nanhua.net/nhzc/varietytrend.html
 1000 点开始, 用收益率累计
 目标地址: http://www.nanhua.net/ianalysis/volatility/20/NHCI.json?t=1574932291399

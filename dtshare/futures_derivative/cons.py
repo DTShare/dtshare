@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/10/27 19:49
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 期货衍生指标配置文件
 交易法门-数据
 西本新干线-指数数据

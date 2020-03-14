@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/10/29 15:20
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 获取腾讯财经-A+H股数据, 实时行情数据和历史行情数据(后复权)
 """
 import random

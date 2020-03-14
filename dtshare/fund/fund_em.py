@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2020/2/5 22:48
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 东方财富网站-天天基金网-基金数据
 http://fund.eastmoney.com/manager/default.html#dt14;mcreturnjson;ftall;pn20;pi1;scabbname;stasc
 

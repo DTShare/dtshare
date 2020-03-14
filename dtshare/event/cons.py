@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2020/2/2 15:22
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 
 """
 province_dict = {"820000": "澳门",

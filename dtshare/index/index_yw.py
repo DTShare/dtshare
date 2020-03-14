@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2020/1/4 19:51
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 义乌小商品指数
 http://www.ywindex.com/Home/Product/index/
 """

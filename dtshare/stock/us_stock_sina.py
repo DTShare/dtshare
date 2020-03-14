@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/10/30 18:47
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 获取新浪财经-美股实时行情数据和历史行情数据
 优化: 在美股行情的获取上采用多线程模式(新浪会封IP, 不再优化)
 """

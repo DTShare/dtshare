@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 Data:2019/10/18 12:32
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 获取世界各大城市生活成本数据
 https://expatistan.com/cost-of-living/index
 """

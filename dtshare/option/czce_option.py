@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2020/1/19 14:44
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 郑州商品交易所-交易数据-历史行情下载-期权历史行情下载
 http://www.czce.com.cn/cn/jysj/lshqxz/H770319index_1.htm
 自 20200101 起，成交量、空盘量、成交额、行权量均为单边计算

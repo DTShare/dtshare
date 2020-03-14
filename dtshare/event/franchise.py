@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2020/2/16 14:51
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 中国-商业特许经营信息管理
 http://txjy.syggs.mofcom.gov.cn/
 需要定期更新历史数据

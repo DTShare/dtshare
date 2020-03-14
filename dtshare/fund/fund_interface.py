@@ -3,7 +3,7 @@
 # """
 # Author: Tong Du
 # date: 2020/2/29 21:33
-# Email: dtshare@126.com
+# contact: dtshare@126.com
 # desc:
 # """
 # from .fund_simu import SimuAgent

@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/10/26 20:34
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 从和讯网获取美股-中概股实时行情数据和历史行情数据(日)
 注意: 由于涉及到复权问题, 建议使用新浪的接口来获取历史行情数据(日)
 """

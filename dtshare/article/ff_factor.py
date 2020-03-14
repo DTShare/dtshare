@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2019/11/14 20:31
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: FF-data-library: http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html
 """
 import pandas as pd

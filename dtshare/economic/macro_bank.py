@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 date: 2020/1/9 22:52
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: 金十数据中心-经济指标-央行利率-主要央行利率
 https://datacenter.jin10.com/economic
 美联储利率决议报告

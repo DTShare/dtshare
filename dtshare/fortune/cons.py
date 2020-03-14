@@ -3,7 +3,7 @@
 """
 Author: Tong Du
 Data:2019/10/10 22:22
-Email: dtshare@126.com
+contact: dtshare@126.com
 desc: fortune 配置文件
 """
 # it-juzi
